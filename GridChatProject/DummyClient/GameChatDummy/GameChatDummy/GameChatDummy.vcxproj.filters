@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{8dec4c0e-1c24-47fa-87ff-8b9730248cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{dd49d7bc-354f-4250-b040-ec110a0ce725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4e141987-b151-4784-9761-0e11cd6ebeca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{b83b4644-3c21-497b-84b2-ddf3e9be21b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\CCrashDump.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\Logger.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\PerformanceMonitor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\TextParser\TextParser.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\MonitorHelper\CCpuUsage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Utils\MonitorHelper\NetworkMonitor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Network\NetClient.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Network\Session.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Network\Packet.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Containers\Job.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameServer\Lib\Containers\RingBuffer.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginClient.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatClient.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\CCrashDump.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\ConfigLoader.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\Logger.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\PerformanceMonitor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\TextParser\TextParser.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\MonitorHelper\CCpuUsage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Utils\MonitorHelper\NetworkMonitor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Network\NetClient.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Network\Session.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Network\Packet.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Containers\Job.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Containers\LockFreeQueue.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Containers\LockFreeStack.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Containers\ObjectPool.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameServer\Lib\Containers\RingBuffer.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginClient.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatClient.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

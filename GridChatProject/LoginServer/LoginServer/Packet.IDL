@@ -1,0 +1,32 @@
+en_PACKET_CS_LOGIN_REQ_LOGIN:101
+{
+	__int64 AccountNo;
+	Array[64] SessionKey;
+}
+
+en_PACKET_CS_LOGIN_RES_LOGIN:102
+{
+	__int64 AccountNo;
+	byte status;
+	Array[64] GameSessionKey;
+	Array[64] ChatSessionKey;
+	Array[40] ID;
+	Array[40] Nickname;
+	Array[32] GameServerIP;
+	WORD GameServerPort;
+	Array[32] ChatServerIP;
+	WORD ChatServerPort;
+}
+
+
+en_PACKET_SS_MONITOR_LOGIN:20001
+{
+	int ServerNo;
+}
+
+en_PACKET_SS_MONITOR_DATA_UPDATE:20002
+{
+	byte DataType;
+	int DataValue;
+	int TimeStamp;
+}

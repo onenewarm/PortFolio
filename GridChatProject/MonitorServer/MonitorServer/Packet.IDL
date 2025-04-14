@@ -1,0 +1,31 @@
+
+en_PACKET_SS_MONITOR_LOGIN:20001
+{
+	int ServerNo;
+}
+
+en_PACKET_SS_MONITOR_DATA_UPDATE:20002
+{
+	byte DataType;
+	int DataValue;
+	int TimeStamp;
+}
+
+en_PACKET_CS_MONITOR_TOOL_REQ_LOGIN:25001
+{
+	Array[32] LoginSessionKey;
+}
+
+
+en_PACKET_CS_MONITOR_TOOL_RES_LOGIN:25002
+{
+	byte Status;
+}
+
+en_PACKET_CS_MONITOR_TOOL_DATA_UPDATE:25003
+{
+	byte ServerNo;
+	byte DataType;
+	int DataValue;
+	int TimeStamp;
+}

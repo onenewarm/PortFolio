@@ -1,0 +1,33 @@
+#pragma once
+#include <Windows.h>
+
+enum : WORD
+{
+    EN_PACKET_CS_CHAT_REQ_LOGIN = 1,
+    EN_PACKET_CS_CHAT_RES_LOGIN = 2,
+    EN_PACKET_CS_CHAT_REQ_SECTOR_MOVE = 3,
+    EN_PACKET_CS_CHAT_RES_SECTOR_MOVE = 4,
+    EN_PACKET_CS_CHAT_REQ_MESSAGE = 5,
+    EN_PACKET_CS_CHAT_RES_MESSAGE = 6,
+    EN_PACKET_CS_CHAT_REQ_HEARTBEAT = 7,
+    EN_PACKET_SS_MONITOR_LOGIN = 20001,
+    EN_PACKET_SS_MONITOR_DATA_UPDATE = 20002,
+};
+
+enum : BYTE
+{
+    dfCHAT_LOGIN_ERR_SESSIONKEY = 0,		// 로그인 세션키 오류
+    dfCHAT_LOGIN_OK = 1,		// 로그인 성공
+};
+
+
+enum en_PACKET_SS_MONITOR_DATA_UPDATE
+{
+    dfMONITOR_DATA_TYPE_CHAT_SERVER_CPU = 31,		// 채팅서버 ChatServer CPU 사용률
+    dfMONITOR_DATA_TYPE_CHAT_SERVER_MEM = 32,		// 채팅서버 ChatServer 메모리 사용 MByte
+    dfMONITOR_DATA_TYPE_CHAT_SESSION = 33,		// 채팅서버 세션 수 (컨넥션 수)
+    dfMONITOR_DATA_TYPE_CHAT_PLAYER = 34,		// 채팅서버 인증성공 사용자 수 (실제 접속자)
+    dfMONITOR_DATA_TYPE_CHAT_UPDATE_TPS = 35,		// 채팅서버 UPDATE 스레드 초당 초리 횟수
+    dfMONITOR_DATA_TYPE_CHAT_PACKET_POOL = 36,		// 채팅서버 패킷풀 사용량
+    dfMONITOR_DATA_TYPE_CHAT_UPDATEMSG_POOL = 37,		// 채팅서버 UPDATE MSG 풀 사용량
+};

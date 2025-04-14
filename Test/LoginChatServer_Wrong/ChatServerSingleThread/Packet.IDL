@@ -1,0 +1,60 @@
+en_PACKET_CS_CHAT_REQ_LOGIN:1
+{
+	__int64 AccountNo;
+	Array[64] SessionKey;
+}
+
+en_PACKET_CS_CHAT_RES_LOGIN:2
+{
+	byte Status;
+	Array[40] ID;
+	Array[40] Nickname;
+	__int64 AccountNo;
+}
+
+en_PACKET_CS_CHAT_REQ_SECTOR_MOVE:3
+{
+	__int64 AccountNo;
+	WORD SectorX;
+	WORD SectorY;
+}
+
+en_PACKET_CS_CHAT_RES_SECTOR_MOVE:4
+{
+	__int64 AccountNo;
+	WORD SectorX;
+	WORD SectorY;
+}
+
+en_PACKET_CS_CHAT_REQ_MESSAGE:5
+{
+	__int64 AccountNo;
+	WORD MessageLen;
+	Array[MessageLen, 200] Message; // with Null
+}
+
+en_PACKET_CS_CHAT_RES_MESSAGE:6
+{
+	__int64 AccountNo;
+	Array[40] ID;
+	Array[40] Nickname;
+	WORD MessageLen;
+	Array[MessageLen, 200] Message;
+}
+
+en_PACKET_CS_CHAT_REQ_HEARTBEAT:7
+{
+
+}
+
+en_PACKET_SS_MONITOR_LOGIN:20001
+{
+	int ServerNo;
+}
+
+en_PACKET_SS_MONITOR_DATA_UPDATE:20002
+{
+	byte DataType;
+	int DataValue;
+	int TimeStamp;
+}

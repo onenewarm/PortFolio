@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{a4c37cb2-f26a-4349-86d8-87ac8b167d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{b7c7f4f2-b4c5-4884-8062-e21e7117953e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{1b85e410-8ebf-4308-9bc3-edacc05e8ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{892486c4-94ba-45ea-b44b-74a804882845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{525201f5-f26e-4b18-b78f-4d6332a16c6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorLanServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorNetServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Containers\RingBuffer.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\DB\DBConnection.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Network\LanServer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Network\NetServer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Network\Session.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Network\CPacket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\CCrashDump.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\Logger.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\PerformanceMonitor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\Profiler.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\TextParser\TextParser.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\MonitorHelper\NetworkMonitor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lib\Utils\MonitorHelper\CCpuUsage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MonitorLanServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorNetServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketHandler.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Containers\LockFreeQueue.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Containers\LockFreeStack.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Containers\ObjectPool.hpp">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Containers\RingBuffer.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\DB\DBConnection.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Network\LanServer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Network\NetServer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Network\Session.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Network\CPacket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\CCrashDump.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\ConfigLoader.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\Logger.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\PerformanceMonitor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\Profiler.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\TextParser\TextParser.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\MonitorHelper\NetworkMonitor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\Utils\MonitorHelper\CCpuUsage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
