@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LockFreeQueueProfile", "LockFreeQueueProfile\LockFreeQueueProfile.vcxproj", "{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Debug|x64.ActiveCfg = Debug|x64
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Debug|x64.Build.0 = Debug|x64
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Debug|x86.Build.0 = Debug|Win32
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Release|x64.ActiveCfg = Release|x64
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Release|x64.Build.0 = Release|x64
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Release|x86.ActiveCfg = Release|Win32
+		{785C4A2E-B8C1-42A5-8E8F-EB272EA45CFF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ED29A6E-83A8-4E6B-97AD-A2027F8E079C}
+	EndGlobalSection
+EndGlobal
