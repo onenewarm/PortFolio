@@ -4,6 +4,7 @@
 Windows IOCP(Input/Output Completion Port)를 활용한 고성능 분산 서버 시스템으로, MMORPG 서버 구조의 핵심 요소들을 구현했습니다. 세션 관리, 공간 분할 브로드캐스팅, 비동기 네트워크 처리 등 실제 게임 서버 개발에 필요한 주요 기술을 적용했습니다.
 
 ## 시스템 아키텍처
+![image](https://github.com/user-attachments/assets/683f6b85-20bf-48ac-9533-3394f7c1d1e6)
 
 ### 서버 구성
 
@@ -50,21 +51,16 @@ Windows IOCP(Input/Output Completion Port)를 활용한 고성능 분산 서버 
   - Python 스크립트로 구현된 IDL 파서
   - 서버/클라이언트 양쪽 패킷 핸들러 자동 생성
 
-## 기술적 특징
+## 테스트
+- **Chat_Multi/ChastServerMulti**: 멀티스레드 채팅 서버 테스트
+  - vs 싱글 챗
 
-### 고성능 네트워크 처리
-- Windows IOCP 모델 기반 비동기 I/O
-- WSASend/WSARecv 비동기 처리 최적화
-- Overlapped I/O 구현
+- **LockFreeQueueProfile**: 락프리 큐 성능 프로파일링
+  - 락 기반큐와 비교
 
-### 안정성 및 확장성
-- 로깅 시스템을 통한 상세한 서버 모니터링
-- 서버 간 통신을 위한 표준화된 프로토콜 (CommonProtocol.h)
-- 설정 파일 (.cnf) 기반 서버 구성 관리
-
-### 모듈화 및 재사용성
-- 공통 라이브러리를 통한 코드 중복 최소화
-- 템플릿 기반 설계로 유연한 확장성 제공
-- IDL 기반 패킷 자동 생성으로 개발 효율성 향상
-
+- **LoginChatServer_Wrong**: Login서버 개선 전 버전
+  
+- **TLSObjectPool/ProfileTLSObjectPool**: TLS 기반 객체 풀 성능 테스트
+  - LFH와 비교하여 성능 비교
+    
 ---
